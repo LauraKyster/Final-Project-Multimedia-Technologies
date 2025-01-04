@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --white: #fffbf7;
+  --creme: #e2b676;
+  --orange: #d8862b;
+  --brightRed: #c54f31;
+  --red: #ac2e22;
+  --darkRed: #6a2119;
+  --brown: #3e2f1f;
+  --lightBlack: #25282d;
+  --lightBlack50: rgba(37, 40, 45, 0.5);
+  --lightBlack75: rgba(37, 40, 45, 0.75);
+}
+@font-face {
+  font-family: manrope;
+  src: url("../fonts/Manrope-VariableFont_wght.woff2");
+}
+@font-face {
+  font-family: fascinate;
+  src: url("../fonts/Fascinate-Regular.woff2");
+}
+.trumpet_img {
+  width: 730px;
+  height: auto;
+}
+.logo {
+  width: 60px;
+  height: auto;
+}
+header {
+  background-color: var(--lightBlack50);
+  height: 80px;
+}
+.header_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px 10px 13.5px;
+}
+h1 {
+  font-family: fascinate;
+  font-size: 96px;
+}
+h2 {
+  font-family: manrope;
+  font-size: 64px;
+}
+h3 {
+  font-size: 48px;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
