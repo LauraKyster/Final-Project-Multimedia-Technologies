@@ -15,6 +15,10 @@
   --lightBlack50: rgba(37, 40, 45, 0.5);
   --lightBlack75: rgba(37, 40, 45, 0.75);
 }
+a,
+button {
+  cursor: pointer;
+}
 @font-face {
   font-family: manrope;
   src: url("../fonts/Manrope-VariableFont_wght.woff2");
@@ -22,24 +26,6 @@
 @font-face {
   font-family: fascinate;
   src: url("../fonts/Fascinate-Regular.woff2");
-}
-.trumpet_img {
-  width: 730px;
-  height: auto;
-}
-.logo {
-  width: 60px;
-  height: auto;
-}
-header {
-  background-color: var(--lightBlack50);
-  height: 80px;
-}
-.header_flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 20px 10px 13.5px;
 }
 h1 {
   font-family: fascinate;
@@ -59,5 +45,63 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+.logo {
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 5;
+  bottom: 5;
+  transform: translateX(-50%);
+}
+
+header {
+  background-color: var(--lightBlack50);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header p {
+  font-size: 16;
+  font-family: fascinate;
+  color: var(--white);
+}
+a,
+header button {
+  font-size: 16px;
+  font-family: manrope;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+}
+.header_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 14px;
+  height: 100%;
+}
+.links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+header button {
+  background-color: transparent;
+  border: 1.5px solid var(--white);
+  border-radius: 5px;
+  padding: 1px 15px;
+}
+/* Information section */
+.trumpet_img {
+  width: 730px;
   height: auto;
 }
