@@ -30,13 +30,31 @@ button {
 h1 {
   font-family: fascinate;
   font-size: 96px;
+  color: var(--white);
 }
 h2 {
   font-family: manrope;
   font-size: 64px;
 }
+
 h3 {
   font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+  font-family: manrope;
+  font-weight: 600;
+  color: var(--white);
+}
+.h4_fas {
+  font-family: fascinate;
+  color: var(--white);
+}
+p {
+  font-size: 20px;
+  color: var(--lightBlack);
+  font-family: manrope;
+  font-weight: 400;
 }
 body {
   overflow-x: hidden;
@@ -47,7 +65,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+button {
+  background-color: var(--lightBlack50);
+  color: var(--white);
+  border: 1px solid var(--lightBlack);
+  border-radius: 10px;
+  font-family: manrope;
+  font-size: 16px;
+  padding: 5px 15px;
+}
 /* Navigation */
 .logo {
   width: 50px;
@@ -60,6 +86,7 @@ img {
 
 header {
   background-color: var(--lightBlack50);
+  backdrop-filter: blur(6px);
   height: 60px;
   position: fixed;
   top: 0;
@@ -100,8 +127,48 @@ header button {
   border-radius: 5px;
   padding: 1px 15px;
 }
-/* Information section */
-.trumpet_img {
-  width: 730px;
-  height: auto;
+
+/* Footer */
+
+footer {
+  background-color: var(--lightBlack);
+  height: 312px;
+  position: relative;
+  display: block;
+}
+footer p {
+  color: var(--white);
+  font-family: manrope;
+  font-size: 16px;
+  margin: 0;
+}
+.footer_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  z-index: 1;
+}
+.SoMe {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.footerlogo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 80px;
+}
+.piano {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-height: 100%;
+  z-index: 0;
+  opacity: 0.8;
 }

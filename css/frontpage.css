@@ -3,6 +3,88 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --white: #fffbf7;
+  --creme: #e2b676;
+  --orange: #d8862b;
+  --brightRed: #c54f31;
+  --red: #ac2e22;
+  --darkRed: #6a2119;
+  --brown: #3e2f1f;
+  --lightBlack: #25282d;
+  --lightBlack50: rgba(37, 40, 45, 0.5);
+  --lightBlack75: rgba(37, 40, 45, 0.75);
+}
 body {
   background-color: var(--orange);
 }
+/* Header section */
+.header_section {
+  background-image: url(../img/header_img.png);
+  height: 800px;
+  position: relative;
+}
+.headersec_text {
+  position: absolute;
+  right: 85px;
+  top: 500px;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+/* Information section */
+
+.grid_1-1 {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info_flex h3 {
+  font-family: fascinate;
+  color: var(--brown);
+}
+.info_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 115px;
+  padding-top: 50px;
+}
+.button_flex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 40px;
+}
+.trumpet_img {
+  width: 730px;
+  height: auto;
+}
+
+/* artist section */
+.artist_section {
+  background-color: var(--brightRed);
+}
+.artist_section h3 {
+  font-family: fascinate;
+  color: var(--white);
+  margin-left: 115px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.artist_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(4 * 300px + 3 * 30px);
+  padding-bottom: 110px;
+}
+.artist_grid img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+/* Newsletter section */
