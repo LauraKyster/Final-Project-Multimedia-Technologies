@@ -88,3 +88,34 @@ body {
 }
 
 /* Newsletter section */
+.news_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.signup {
+  justify-content: center;
+  align-content: center;
+}
+.signup h4,
+p {
+  color: var(--lightBlack);
+}
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px 0;
+  outline: none;
+  width: 200px; /* Adjust width as needed */
+}
+
+input[type="email"]::placeholder {
+  color: #ab6a22;
+}
