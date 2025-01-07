@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --white: #fffbf7;
+  --creme: #e2b676;
+  --orange: #d8862b;
+  --brightRed: #c54f31;
+  --red: #ac2e22;
+  --darkRed: #6a2119;
+  --brown: #3e2f1f;
+  --lightBlack: #25282d;
+  --lightBlack50: rgba(37, 40, 45, 0.5);
+  --lightBlack75: rgba(37, 40, 45, 0.75);
+}
+a,
+button {
+  cursor: pointer;
+}
+@font-face {
+  font-family: manrope;
+  src: url("../fonts/Manrope-VariableFont_wght.woff2");
+}
+@font-face {
+  font-family: fascinate;
+  src: url("../fonts/Fascinate-Regular.woff2");
+}
+body {
+  background-color: var(--brightRed);
+}
+.about_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about_grid h2 {
+  font-family: fascinate;
+  color: var(--lightBlack);
+}
+.about_grid h4 {
+  font-family: manrope;
+  font-size: 36px;
+  color: var(--lightBlack);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.about_grid h3 {
+  font-size: 48px;
+  font-family: Manrope;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.about_grid p {
+  font-size: 20px;
+  font-family: Manrope;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: var(--lightBlack);
+}
+.about_flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+  padding: 0 140px 0 100px;
+  gap: 40px;
+}
+.about_some {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 40px;
+}
+.about_information {
+  background-color: var(--orange);
+  padding: 120px;
+  position: relative;
+  padding-bottom: 200px;
+}
+.about_text {
+  margin-right: 70px;
+}
+
+.about_genres {
+  padding-left: 30px;
+  background-image: url(../img/about_background.png);
+}
+.about_genres p {
+  margin-bottom: 56px;
+}
+.about_img {
+  position: absolute;
+  width: 400px;
+  top: 900px;
+  left: 0;
+  transform: scaleX(-1);
+}

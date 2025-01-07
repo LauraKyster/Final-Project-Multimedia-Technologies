@@ -81,10 +81,39 @@ body {
   max-width: calc(4 * 300px + 3 * 30px);
   padding-bottom: 110px;
 }
-.artist_grid img {
+
+/* Artist hover */
+.artist {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   max-width: 300px;
+}
+.artist img {
+  width: 100%;
   display: block;
+  transition: 0.3s ease;
+}
+.artist_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--white);
+  font-family: fascinate;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.artist:hover img {
+  filter: grayscale(100%);
+}
+.artist:hover .artist_name {
+  opacity: 1;
 }
 
 /* Newsletter section */
