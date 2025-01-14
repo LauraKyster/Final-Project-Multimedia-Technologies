@@ -30,28 +30,25 @@ button {
 body {
   background-color: var(--brightRed);
 }
-.about_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.about_grid h2 {
+
+.about_information h2 {
   font-family: fascinate;
   color: var(--lightBlack);
 }
-.about_grid h4 {
+.about_information h4 {
   font-family: manrope;
   font-size: 36px;
   color: var(--lightBlack);
   font-weight: 300;
   margin-bottom: 10px;
 }
-.about_grid h3 {
+.about_information h3 {
   font-size: 48px;
   font-family: Manrope;
   font-weight: 300;
   margin-bottom: 40px;
 }
-.about_grid p {
+.about_information p {
   font-size: 20px;
   font-family: Manrope;
   font-weight: 400;

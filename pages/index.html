@@ -20,7 +20,7 @@
         <div class="links">
           <a href="../pages/program.html">PROGRAM</a>
           <a href="../pages/about.html">ABOUT</a>
-          <button class="tickets">TICKETS</button>
+          <button id="openOverlay" class="tickets">TICKETS</button>
         </div>
       </div>
     </header>
@@ -33,7 +33,7 @@
         </div>
       </section>
       <section class="infomation">
-        <div class="grid_1-1">
+        <div class="infogrid_1-1">
           <div class="info_flex">
             <h3>
               Jazz and blues for <br />
@@ -97,6 +97,7 @@
             <span class="artist_name">Bill Evans</span>
           </div>
         </div>
+        <h4 class="h4_fas"><a href="../pages/program.html">SEE PROGRAM HERE</a></h4>
       </section>
       <section class="newsletter_section">
         <div class="news_grid">
@@ -131,6 +132,29 @@
       </div>
       <img class="piano" src="../img/piano.png" alt="" />
     </footer>
+
+    <!-- Tickets overlay -->
+    <div id="overlay" class="hidden">
+      <div class="overlay_box">
+        <button id="closeOverlay" class="close_btn">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </button>
+        <h2>BUY TICKETS</h2>
+        <div class="tickets_box">
+          <div class="enter">
+            <input type="email" id="email" placeholder="Enter e-mail..." />
+            <input type="number" id="numer" placeholder="Enter mobile numer..." />
+            <input type="number" id="amount" placeholder="Enter amount of tickets..." />
+          </div>
+          <div class="payment">
+            <p>Go to payment:</p>
+            <button>NEXT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -34,7 +34,7 @@ body {
 
 /* Information section */
 
-.grid_1-1 {
+.infogrid_1-1 {
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -62,6 +62,19 @@ body {
 }
 
 /* artist section */
+
+/* only when click on text */
+.artist_section h4 a {
+  font-family: fascinate;
+  text-decoration: underline;
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 600;
+}
+.artist_section h4 {
+  text-align: center;
+  padding-bottom: 60px;
+}
 .artist_section {
   background-color: var(--brightRed);
 }
@@ -78,8 +91,10 @@ body {
   gap: 30px;
   justify-content: center;
   margin: 0 auto;
-  max-width: calc(4 * 300px + 3 * 30px);
-  padding-bottom: 110px;
+  /*  max-width: calc(4 * 300px + 3 * 30px); */
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* Artist hover */
@@ -87,8 +102,8 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 300px;
 }
+
 .artist img {
   width: 100%;
   display: block;
