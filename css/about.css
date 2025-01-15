@@ -44,7 +44,7 @@ body {
 }
 .about_information h3 {
   font-size: 48px;
-  font-family: Manrope;
+  font-family: shadows;
   font-weight: 300;
   margin-bottom: 40px;
 }
@@ -91,4 +91,12 @@ body {
   top: 900px;
   left: 0;
   transform: scaleX(-1);
+}
+
+/* Mobile Display */
+@media screen and (max-width: 600px) {
+  .grid_1-1 {
+    display: flex;
+    flex-direction: column;
+  }
 }

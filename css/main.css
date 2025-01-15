@@ -27,6 +27,10 @@ button {
   font-family: fascinate;
   src: url("../fonts/Fascinate-Regular.woff2");
 }
+@font-face {
+  font-family: shadows;
+  src: url(../fonts/ShadowsIntoLight-Regular.woff2);
+}
 
 h1 {
   font-family: fascinate;
@@ -37,19 +41,30 @@ h2 {
   font-family: manrope;
   font-size: 64px;
 }
-
+.h2_fas {
+  font-family: fascinate;
+  font-size: 64px;
+  color: var(--lightBlack);
+}
 h3 {
   font-size: 48px;
 }
 h4 {
   font-size: 36px;
   font-family: manrope;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--white);
 }
 .h4_fas {
   font-family: fascinate;
   color: var(--white);
+}
+.h4_light {
+  font-family: shadows;
+  font-size: 40px;
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 h5 {
   font-family: fascinate;
@@ -241,3 +256,17 @@ footer p {
   transform: rotate(-45deg);
 }
 /* no rotate? */
+
+/* Mobile display */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+}

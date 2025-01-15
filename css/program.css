@@ -40,14 +40,21 @@ body {
 }
 .program_header {
   position: relative;
-  background-color: var(--red);
-  height: 450px;
+  background-color: var(--darkRed);
+  height: 540px;
+}
+.program p {
+  font-family: shadows;
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--darkRed);
+  text-shadow: 0px 2px 5px var(--white);
 }
 .program_header img {
   position: absolute;
   right: 0;
   bottom: 0;
-  top: 0;
+  top: 90px;
   left: 50%;
   height: 450px;
   opacity: 0.8;
@@ -58,39 +65,58 @@ body {
   padding-bottom: 95px;
 }
 /* program dates */
-
+.scene_artist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .date_bar h3 {
   font-family: fascinate;
   color: var(--white);
   padding-left: 130px;
+  margin: auto;
 }
-.bar1 {
-  background-color: var(--darkRed);
-}
-.bar2 {
-  background-color: var(--brightRed);
-}
-.bar3 {
+.date_bar {
   background-color: var(--red);
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
 }
-.program {
-  background-image: url(../img/about_background.png);
-}
+
 .names_program {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 130px;
-  margin-top: 70px;
   margin-bottom: 80px;
 }
 .names_program h4 {
-  color: var(--lightBlack);
   font-weight: 600;
+  color: var(--darkRed);
+}
+.names_program hr {
+  width: auto;
+  max-width: 100%;
+  margin: 0 130px;
+  border: none;
+  border-top: 1px solid var(--white);
+  border-style: dashed;
+  border-image: repeating-linear-gradient(to right, var(--white) 0, var(--white) 10px, transparent 10px, transparent 20px) 1;
 }
 .date_name {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   gap: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+.artist_font {
+  font-family: fascinate;
+  font-size: 48px;
+  color: var(--white) !important;
+  text-shadow: 0px 2px 5px var(--brightRed);
+}
+.time_stage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
 }
