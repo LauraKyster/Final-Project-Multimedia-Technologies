@@ -23,6 +23,8 @@ overlay.addEventListener("click", (event) => {
   overlay.classList.add("hidden");
 });
 
+/* Header */
+
 window.addEventListener("scroll", function () {
   console.log(this.window.scrollY);
   if (this.window.scrollY <= 50) {
