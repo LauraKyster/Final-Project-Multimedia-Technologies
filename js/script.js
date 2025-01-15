@@ -33,3 +33,14 @@ window.addEventListener("scroll", function () {
     this.document.querySelector("header").classList.remove("menu-background");
   }
 });
+
+/* Burger menu */
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burgerMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  /* Open menu */
+  burgerMenu.addEventListener("click", function () {
+    mobileMenu.classList.toggle("open");
+  });
+});
