@@ -27,6 +27,10 @@ button {
   font-family: fascinate;
   src: url("../fonts/Fascinate-Regular.woff2");
 }
+@font-face {
+  font-family: shadows;
+  src: url(../fonts/ShadowsIntoLight-Regular.woff2);
+}
 body {
   background-color: var(--brightRed);
 }

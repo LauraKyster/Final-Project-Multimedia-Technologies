@@ -27,6 +27,10 @@ button {
   font-family: fascinate;
   src: url("../fonts/Fascinate-Regular.woff2");
 }
+@font-face {
+  font-family: shadows;
+  src: url(../fonts/ShadowsIntoLight-Regular\\.woff2);
+}
 body {
   background-color: var(--orange);
 }
@@ -49,6 +53,9 @@ body {
   font-size: 28px;
   color: var(--darkRed);
   text-shadow: 0px 2px 5px var(--white);
+}
+.h4_light h4 {
+  font-family: shadows;
 }
 .program_header img {
   position: absolute;
@@ -173,6 +180,10 @@ body {
   .names_program h4 {
     font-weight: 600;
     color: var(--darkRed);
+    font-size: 18px;
+  }
+  .names_program p {
+    font-size: 18px;
   }
   .names_program hr {
     width: auto;
@@ -194,7 +205,7 @@ body {
   }
   .artist_font {
     font-family: fascinate;
-    font-size: 36px;
+    font-size: 26px !important;
     color: var(--white) !important;
     text-shadow: 0px 2px 5px var(--brightRed);
   }

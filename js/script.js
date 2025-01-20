@@ -27,7 +27,7 @@ overlay.addEventListener("click", (event) => {
 
 window.addEventListener("scroll", function () {
   console.log(this.window.scrollY);
-  if (this.window.scrollY <= 50) {
+  if (this.window.scrollY >= 50) {
     this.document.querySelector("header").classList.add("menu-background");
   } else {
     this.document.querySelector("header").classList.remove("menu-background");
