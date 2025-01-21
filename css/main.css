@@ -444,7 +444,14 @@ input[type="number"]::placeholder {
   .mobile-menu.open {
     display: flex;
   }
-
+  .tickets {
+    width: 150px;
+    height: 50px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
   /* Footer Mobile */
   .footer {
     position: relative;

@@ -152,20 +152,6 @@ p {
   align-items: center;
   gap: 10px;
 }
-input[type="email"] {
-  border: none;
-  border-bottom: 2px solid white;
-  background-color: transparent;
-  color: white;
-  font-size: 16px;
-  padding: 5px 0;
-  outline: none;
-  width: 200px; /* Adjust width as needed */
-}
-
-input[type="email"]::placeholder {
-  color: #ab6a22;
-}
 
 @media screen and (max-width: 600px) {
   .header_section {

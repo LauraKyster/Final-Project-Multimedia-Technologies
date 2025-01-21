@@ -1,15 +1,20 @@
 // Hent elementer
 const overlay = document.getElementById("overlay");
-const openBtn = document.getElementById("openOverlay");
+const openBtns = document.querySelectorAll(".tickets");
+const openBtnM = document.getElementById("openOverlayMobile");
 const closeBtn = document.getElementById("closeOverlay");
-console.log(openBtn);
-// Åbn overlayet
-openBtn.addEventListener("click", () => {
-  overlay.classList.remove("hidden");
-  setTimeout(function () {
-    overlay.style.opacity = 1;
-  }, 50);
+
+openBtns.forEach(function (btn) {
+  btn.addEventListener("click", () => {
+    overlay.classList.remove("hidden");
+    setTimeout(function () {
+      overlay.style.opacity = 1;
+    }, 50);
+  });
 });
+
+// Åbn overlayet
+
 /* slower display? */
 
 // Luk overlayet
@@ -19,9 +24,9 @@ closeBtn.addEventListener("click", () => {
 });
 
 // Luk overlayet ved klik udenfor boksen
-overlay.addEventListener("click", (event) => {
+/* overlay.addEventListener("click", (event) => {
   overlay.classList.add("hidden");
-});
+}); */
 
 /* Header */
 
