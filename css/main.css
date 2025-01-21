@@ -94,6 +94,7 @@ button {
   font-family: manrope;
   font-size: 16px;
   padding: 5px 15px;
+  width: 130px;
 }
 .grid_1-1 {
   display: grid;
@@ -258,15 +259,45 @@ footer p {
   flex-direction: column;
 }
 
-.enter input {
-  margin-bottom: 15px;
-  border: var(--orange);
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid white;
   background-color: transparent;
+  color: white;
   font-size: 16px;
-  padding: 5px 5px;
-  outline: var(--white);
-  text-decoration: underline 1px var(--orange);
-  width: 100%;
+  padding: 5px 0;
+  outline: none;
+  width: 200px; /* Adjust width as needed */
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px 0;
+  outline: none;
+  width: 200px; /* Adjust width as needed */
+}
+input[type="number"] {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px 0;
+  outline: none;
+  width: 200px; /* Adjust width as needed */
+}
+
+input[type="email"]::placeholder {
+  color: #ab6a22;
+}
+input[type="text"]::placeholder {
+  color: #ab6a22;
+}
+input[type="number"]::placeholder {
+  color: #ab6a22;
 }
 .close_btn {
   position: absolute;
@@ -294,7 +325,7 @@ footer p {
   background-color: var(--orange);
 }
 .payment button {
-  margin-left: 50%;
+  margin-left: 40%;
 }
 .close_btn .line {
   position: absolute;
@@ -330,7 +361,8 @@ footer p {
     font-size: 18px;
   }
   button {
-    height: 60px;
+    height: 45px;
+    width: 100px;
   }
 
   /* Header mobile */
